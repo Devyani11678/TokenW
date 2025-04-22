@@ -31,8 +31,8 @@ jobs:
       run: |
         npx newman run ".github/workflows/TokenChk.postman_collection.json" ^
         -e ".github/workflows/QA.postman_environment.json" ^
-        --reporters cli,html ^
-        --reporter-html-export "newman-report.html" ^
+        --reporters cli,htmlextra ^
+        --reporter-htmlextra-export "newman-report.html" ^
         --verbose
 
     - name: Upload HTML Report as Artifact
