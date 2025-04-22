@@ -24,7 +24,7 @@ jobs:
     - name: Install Newman & HTML Reporter
       run: |
         npm init -y
-        npm install newman newman-reporter-html
+        npm install newman newman-reporter-htmlextra
 
     - name: Run Newman Tests with HTML Reporter and CLI Output
       shell: cmd
